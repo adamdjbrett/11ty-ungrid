@@ -1,0 +1,21 @@
+{
+  "name": "ungrid-blog",
+  "version": "1.0.0",
+  "description": "A minimalist 11ty blog using ungrid.css",
+  "type": "module",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "blog",
+    "static-site-generator"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.2"
+  }
+}

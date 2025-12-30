@@ -1,0 +1,34 @@
+---
+layout: base.njk
+---
+
+<article>
+    <div class="row">
+        <div class="col">
+            <h1>{{ title }}</h1>
+            <p><small>Published on {{ date | readableDate }}</small></p>
+            {% if tags %}
+            <p>
+                {% for tag in tags %}
+                {% if tag !== "posts" %}
+                <a href="/tags/{{ tag }}/">#{{ tag }}</a>
+                {% endif %}
+                {% endfor %}
+            </p>
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            {{ content | safe }}
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col">
+            <hr>
+            <p><a href="/blog/">← Back to all posts</a></p>
+        </div>
+    </div>
+</article>
